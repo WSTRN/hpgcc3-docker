@@ -19,7 +19,7 @@ command to be excecuted in the build environment to allow custom configurations.
 To install type the following commands into the shell:
  
 ````
-git clone https://github.com/Mixih/hpgcc3-docker
+git clone https://github.com/WSTRN/hpgcc3-docker
 cd hpgcc3-docker
 docker build -t hpgcc .
 ````
