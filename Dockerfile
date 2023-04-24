@@ -16,10 +16,9 @@ RUN apt-get install -y --force-yes \
     unzip \
     wget &&\
     apt-get clean
-RUN pip install jinja2==2.1.1
 
-COPY amake.sh conf.py entrypoint.sh hpgcc.sh install_hpgcc.sh makefile /hpgcc3/
-COPY subdir.tmpl /hpgcc3/templates/
+COPY entrypoint.sh install_hpgcc.sh /hpgcc3/
+COPY build.sh /
 
 RUN bash /hpgcc3/install_hpgcc.sh && mkdir /work
 

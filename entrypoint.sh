@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $# == 0 ]]; then
-    cat /hpgcc3/hpgcc.sh
+
 	exit 0
 fi   
 
